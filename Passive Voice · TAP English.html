@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="uk"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Passive Voice · TAP English</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EDE8E1;--tx:#2B2B2B;--card:rgba(255,255,255,.62);--bd:rgba(44,58,78,.14);--ac:#3A6EA5;--ac2:#2C3A4E;--ok:#1f6b4a;--okb:#dcefe6;--no:#a53a30;--nob:#f6e1de;--mut:#5b6573;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b2430;--tx:#EDE8E1;--card:rgba(255,255,255,.07);--bd:rgba(127,196,232,.2);--ac:#7FC4E8;--ac2:#EDE8E1;--ok:#8fdcb4;--okb:rgba(46,125,91,.3);--no:#f3a79d;--nob:rgba(179,69,58,.3);--mut:#a9b4c2}}
+:root[data-theme="dark"]{--bg:#1b2430;--tx:#EDE8E1;--card:rgba(255,255,255,.07);--bd:rgba(127,196,232,.2);--ac:#7FC4E8;--ac2:#EDE8E1;--ok:#8fdcb4;--okb:rgba(46,125,91,.3);--no:#f3a79d;--nob:rgba(179,69,58,.3);--mut:#a9b4c2}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 Inter,system-ui,sans-serif}
+.w{max-width:820px;margin:0 auto;padding:20px 16px 70px}
+h1{font:600 clamp(26px,6vw,38px)/1.15 Fraunces,Georgia,serif;margin:.1em 0 .3em;color:var(--ac2)}
+.glass{background:var(--card);border:1px solid var(--bd);border-radius:18px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.hero{padding:20px 22px}
+.base{font:600 20px/1.4 Fraunces,Georgia,serif;color:var(--ac);margin:.5em 0 0}
+.mut{color:var(--mut);font-size:14px}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;margin:14px 0;padding:10px;display:flex;flex-direction:column;gap:8px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tab{flex:1;min-width:140px;border:1px solid var(--bd);background:transparent;color:var(--tx);border-radius:12px;padding:9px 10px;font:500 14px Inter,sans-serif;cursor:pointer}
+.tab.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.tab small{display:block;opacity:.8;font-size:12px}
+.pb{height:6px;border-radius:9px;background:var(--bd);overflow:hidden}
+.pb i{display:block;height:100%;width:0;background:var(--ac);transition:width .3s}
+.card{padding:16px 18px;margin:12px 0}
+.lab{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--mut);margin-bottom:4px}
+.en{font:600 19px/1.4 Fraunces,Georgia,serif;margin:2px 0 12px}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+.btn,.chip{border:1px solid var(--bd);background:transparent;color:var(--tx);border-radius:10px;padding:8px 14px;font:500 14px Inter,sans-serif;cursor:pointer}
+.btn:hover,.chip:hover{border-color:var(--ac)}
+.btn.p{background:var(--ac);color:#fff;border-color:var(--ac)}
+.chip{padding:6px 10px;font-size:13px}
+.ok{background:var(--okb)!important;color:var(--ok)!important;border-color:var(--ok)!important}
+.no{background:var(--nob)!important;color:var(--no)!important;border-color:var(--no)!important}
+input[type=text]{flex:1;min-width:200px;border:1px solid var(--bd);background:transparent;color:var(--tx);border-radius:10px;padding:9px 12px;font:16px Inter,sans-serif}
+.fb{margin-top:12px;padding:10px 12px;border-radius:10px;font-size:15px;line-height:1.6}
+.fb.ok,.fb.no{border:0!important}
+.fb details{margin-top:6px}
+.pills{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 4px}
+.pill{width:38px;height:38px;border-radius:50%;border:1px solid var(--bd);background:transparent;color:var(--tx);font:600 14px Inter,sans-serif;cursor:pointer}
+.pill.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.pill.done{border-color:var(--ok);box-shadow:inset 0 0 0 2px var(--ok)}
+.th{margin:14px 0 2px;font:600 22px Fraunces,Georgia,serif;color:var(--ac2)}
+[hidden]{display:none!important}
+</style></head><body><div class="w">
+<div class="glass hero">
+<div class="mut">TAP English · Passive Voice</div>
+<h1>Усі часи Passive на двох реченнях</h1>
+<div class="base">The cars (repair) by that man.<br>The kitchen (clean).</div>
+<p class="mut" style="margin:.8em 0 0">10 часів/форм × стверджувальні, заперечні та питальні речення. Відповідь перевіряється одразу, а після кожного речення — пояснення.</p>
+</div>
+<div class="glass top"><div class="tabs">
+<button class="tab on" data-s="1">1 · Active чи Passive?<small id="c1"></small></button>
+<button class="tab" data-s="2">2 · Тест на час Passive<small id="c2"></small></button>
+<button class="tab" data-s="3">3 · Active → Passive<small id="c3"></small></button></div>
+<div class="pb"><i id="bar"></i></div></div>
+<div id="s1"></div><div id="s2" hidden></div><div id="s3" hidden></div>
+</div>
+<script>
+const $=q=>document.querySelector(q);
+const V=[{b:'repair',s:'repairs',p:'repaired',g:'repairing'},{b:'clean',s:'cleans',p:'cleaned',g:'cleaning'}];
+const S=[{id:'cars',v:V[0],Su:'That man',su:'that man',o:'the cars',pl:1,ag:' by that man'},
+{id:'kitchen',v:V[1],Su:'Someone',su:'someone',o:'the kitchen',pl:0,ag:''}];
+const T=[
+{n:'Present Simple',f:'am / is / are + V3',h:'регулярна або загальна дія',a:v=>[0,v.s],d:["doesn't",'Does'],p:(v,l)=>[l?'are':'is',v.p]},
+{n:'Present Continuous',f:'am / is / are + being + V3',h:'дія триває просто зараз (being = процес)',a:v=>['is',v.g],p:(v,l)=>[l?'are':'is','being '+v.p]},
+{n:'Past Simple',f:'was / were + V3',h:'завершена дія в минулому',a:v=>[0,v.p],d:["didn't",'Did'],p:(v,l)=>[l?'were':'was',v.p]},
+{n:'Past Continuous',f:'was / were + being + V3',h:'процес у певний момент минулого',a:v=>['was',v.g],p:(v,l)=>[l?'were':'was','being '+v.p]},
+{n:'Present Perfect',f:'have / has + been + V3',h:'результат дії важливий зараз',a:v=>['has',v.p],p:(v,l)=>[l?'have':'has','been '+v.p]},
+{n:'Past Perfect',f:'had + been + V3',h:'дія раніше за іншу дію в минулому',a:v=>['had',v.p],p:v=>['had','been '+v.p]},
+{n:'Future Simple',f:'will + be + V3',h:'майбутня дія або спонтанне рішення',a:v=>['will',v.b],p:v=>['will','be '+v.p]},
+{n:'Future Perfect',f:'will + have been + V3',h:'дія буде завершена до певного моменту в майбутньому',a:v=>['will','have '+v.p],p:v=>['will','have been '+v.p]},
+{n:'Be going to',f:'am / is / are + going to be + V3',h:'план або намір на майбутнє',a:v=>['is','going to '+v.b],p:(v,l)=>[l?'are':'is','going to be '+v.p]},
+{n:'Modal (can)',f:'can / must / should + be + V3',h:'можливість, обов’язок, порада',a:v=>['can',v.b],p:v=>['can','be '+v.p]}];
+const FN=['стверджувальне','заперечне','питальне'];
+const cap=s=>s[0].toUpperCase()+s.slice(1);
+const ng=a=>a=='will'?"won't":a=='can'?"can't":a+"n't";
+function A(t,s,f){const[x,r]=t.a(s.v);
+ if(!x)return f==0?`${s.Su} ${r} ${s.o}.`:f==1?`${s.Su} ${t.d[0]} ${s.v.b} ${s.o}.`:`${t.d[1]} ${s.su} ${s.v.b} ${s.o}?`;
+ return f==0?`${s.Su} ${x} ${r} ${s.o}.`:f==1?`${s.Su} ${ng(x)} ${r} ${s.o}.`:`${cap(x)} ${s.su} ${r} ${s.o}?`}
+function P(t,s,f){const[x,r]=t.p(s.v,s.pl),O=cap(s.o);
+ return f==0?`${O} ${x} ${r}${s.ag}.`:f==1?`${O} ${ng(x)} ${r}${s.ag}.`:`${cap(x)} ${s.o} ${r}${s.ag}?`}
+const nm=s=>s.toLowerCase().replace(/[’`]/g,"'").replace(/[.?!,]/g,'').replace(/won't/g,'will not').replace(/can't|cannot/g,'can not').replace(/n't/g,' not').replace(/\s+/g,' ').trim().replace(/ by (someone|somebody|them)$/,'');
+function ex3(t,s,f){const[x,r]=t.a(s.v),[y,q]=t.p(s.v,s.pl),av=(x?x+' ':'')+r,pv=y+' '+q;
+ const num=t.p(s.v,1)[0]!=t.p(s.v,0)[0];
+ let h=`<b>1.</b> Додаток <i>${s.o}</i> стає підметом: <i>${cap(s.o)}</i>.<br><b>2.</b> ${t.n}: <i>${av}</i> → <i>${pv}</i> (${t.f})${num?`; be узгоджуємо з <i>${s.o}</i> (${s.pl?'мн.':'одн.'}): <i>${y}</i>`:''}.<br><b>3.</b> `;
+ h+=s.ag?`Виконавця ставимо в кінець з <i>by</i>: <i>${s.ag.trim()}</i>.`:`<i>Someone</i> — невідомо чи неважливо, тому <i>by</i>-частину опускаємо.`;
+ if(f==1)h+=`<br><b>Заперечення:</b> not додаємо до першого допоміжного дієслова: <i>${ng(y)}</i>.`;
+ if(f==2)h+=`<br><b>Питання:</b> перше допоміжне виходить на початок: <i>${cap(y)} ${s.o} …?</i>`;
+ if(f&&!x)h+=`<br>Допоміжне <i>${t.d[1].toLowerCase()}</i> у пасиві зникає — працює be.`;
+ return h}
+const I1=[],I2=[],I3=[];
+T.forEach((t,i)=>{S.forEach((s,j)=>{const f=(i+j)%3,pas=(i+j)%2==1;
+ I1.push({t,s,f,pas,text:pas?P(t,s,f):A(t,s,f)});
+ const g=(i+j+1)%3;I2.push({t,s,f:g,text:P(t,s,g)})});
+ for(let f=0;f<3;f++)S.forEach(s=>I3.push({t,ti:i,s,f}))});
+I2.sort(()=>Math.random()-.5);
+const st={1:{},2:{},3:{}},tot={1:20,2:20,3:60};
+function upd(){let c=0;[1,2,3].forEach(k=>{const n=Object.keys(st[k]).length;c+=n;$('#c'+k).textContent=n+' / '+tot[k]});
+ $('#bar').style.width=c+'%';
+ T.forEach((_,i)=>{const p=document.querySelector('[data-p="'+i+'"]');if(p)p.classList.toggle('done',I3.every((it,n)=>it.ti!=i||st[3][n]))})}
+function fb(k,i,ok,html){const e=$('#fb'+k+'_'+i);e.className='fb '+(ok?'ok':'no');e.innerHTML=(ok?'✓ Правильно. ':'✗ Ще ні. ')+html;e.hidden=false;if(ok)st[k][i]=1;upd()}
+function ex1(it){const{t,s,pas}=it,[y,q]=t.p(s.v,s.pl);
+ return pas?`Це <b>Passive</b> (${t.n}): <i>${s.o}</i> не виконує дію, а отримує її. Маркер — <i>${y} + ${q}</i> (${t.f}).`
+ :`Це <b>Active</b> (${t.n}): <i>${s.su}</i> сам виконує дію (<i>${s.v.b}</i>). Немає be + V3, тож це не пасив.`}
+function ex2(it,v){const{t,s,f}=it,[y,q]=t.p(s.v,s.pl),w=T[v];
+ return (v==T.indexOf(t)?'':`Обрано ${w.n} (${w.f}), але тут <i>${y} ${q}</i>. `)+`Це <b>${t.n} Passive</b>: ${t.f}. Підказка: ${t.h}.`}
+I1.forEach((it,i)=>$('#s1').insertAdjacentHTML('beforeend',`<div class="glass card"><div class="lab">${i+1}. ${it.t.n} · ${FN[it.f]}</div><div class="en">${it.text}</div><div class="row"><button class="btn" data-k="1" data-i="${i}" data-v="0">Active</button><button class="btn" data-k="1" data-i="${i}" data-v="1">Passive</button></div><div class="fb" id="fb1_${i}" hidden></div></div>`));
+I2.forEach((it,i)=>$('#s2').insertAdjacentHTML('beforeend',`<div class="glass card"><div class="lab">${i+1}. Який це час? · ${FN[it.f]}</div><div class="en">${it.text}</div><div class="row">${T.map((x,ti)=>`<button class="chip" data-k="2" data-i="${i}" data-v="${ti}">${x.n}</button>`).join('')}</div><div class="fb" id="fb2_${i}" hidden></div></div>`));
+let h3=`<div class="pills">${T.map((t,i)=>`<button class="pill${i?'':' on'}" data-p="${i}" title="${t.n}">${i+1}</button>`).join('')}</div>`;
+T.forEach((t,ti)=>{h3+=`<div class="tb" data-t="${ti}"${ti?' hidden':''}><div class="th">${ti+1}. ${t.n}</div><div class="mut">${t.f} · ${t.h}</div>`;
+ I3.forEach((it,n)=>{if(it.ti!=ti)return;h3+=`<div class="glass card"><div class="lab">${FN[it.f]} · ${it.s.id}</div><div class="en">${A(t,it.s,it.f)}</div><div class="row"><input type="text" id="in${n}" data-n="${n}" placeholder="Passive: …" autocomplete="off" autocapitalize="off" spellcheck="false"><button class="btn p" data-c="${n}">Перевірити</button></div><div class="fb" id="fb3_${n}" hidden></div></div>`});
+ h3+=ti<9?`<button class="btn p" data-next="${ti+1}">Наступний час →</button>`:'<p class="mut">🎉 Це був останній час. Поверніться до розділів 1–2, щоб закріпити.</p>';h3+='</div>'});
+$('#s3').innerHTML=h3;
+function chk3(n){const it=I3[n],ok=nm($('#in'+n).value)==nm(P(it.t,it.s,it.f));if(!$('#in'+n).value.trim())return;
+ const key=P(it.t,it.s,it.f),e=ex3(it.t,it.s,it.f);
+ fb(3,n,ok,ok?`<b>${key}</b><br>${e}`:`${e}<details><summary>Показати відповідь</summary><b>${key}</b></details>`)}
+function show(s){[1,2,3].forEach(k=>{$('#s'+k).hidden=k!=s});document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('on',b.dataset.s==s));scrollTo({top:0,behavior:'smooth'})}
+function tense(i){document.querySelectorAll('.tb').forEach(b=>b.hidden=b.dataset.t!=i);document.querySelectorAll('.pill').forEach(b=>b.classList.toggle('on',b.dataset.p==i));$('#s3').scrollIntoView({behavior:'smooth'})}
+document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const d=b.dataset;
+ if(d.s)return show(d.s);if(d.p!==undefined)return tense(d.p);if(d.next!==undefined)return tense(d.next);if(d.c!==undefined)return chk3(+d.c);
+ if(d.k=='1'){const it=I1[d.i],ok=(+d.v==1)==it.pas;b.classList.add(ok?'ok':'no');fb(1,d.i,ok,ex1(it))}
+ if(d.k=='2'){const it=I2[d.i],ok=+d.v==T.indexOf(it.t);b.classList.add(ok?'ok':'no');fb(2,d.i,ok,ex2(it,+d.v))}});
+document.addEventListener('keydown',e=>{if(e.key=='Enter'&&e.target.dataset.n)chk3(+e.target.dataset.n)});
+upd();
+</script></body></html>
